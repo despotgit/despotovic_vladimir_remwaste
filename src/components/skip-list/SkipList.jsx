@@ -1,7 +1,7 @@
 import React from "react";
 import "./skip-list.css";
 
-import skipImageUrl from "./assets/images/skip.jpg";
+import skipImageUrl from "../../assets/images/skip.jpg";
 
 const SkipList = ({ skips }) => {
 	const calculateTotalPrice = (priceBeforeVat, vatPercent) => {

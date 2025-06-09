@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SkipList from "./SkipList.jsx";
+import SkipList from "./components/skip-list/SkipList.jsx";
 import { fetchSkips } from "./api";
 import "./App.css";
 
