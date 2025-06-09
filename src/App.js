@@ -13,6 +13,7 @@ function App() {
 
 	const handleFilterChange = (filters) => {
 		console.log("Filter changed:", filters);
+		// Here you can implement the logic to filter skips based on the selected filters
 	};
 
 	useEffect(() => {

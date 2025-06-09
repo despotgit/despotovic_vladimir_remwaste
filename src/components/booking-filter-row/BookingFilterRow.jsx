@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./booking-filter-row.css"; // you can style it here
+import "./booking-filter-row.css";
 
 const BookingFilterRow = ({ onFilterChange }) => {
 	const [postcode, setPostcode] = useState("");
@@ -10,7 +10,7 @@ const BookingFilterRow = ({ onFilterChange }) => {
 	const [collectionDate, setCollectionDate] = useState("");
 
 	const handleChange = () => {
-		// send filter state to parent component (optional)
+		// send filter state to parent component
 		if (onFilterChange) {
 			onFilterChange({
 				postcode,
