@@ -14,10 +14,13 @@
 	padding: 12px;
 	margin-bottom: 12px;
 	background-color: #f9f9f9;
-	flex: 1;
 	box-sizing: border-box;
 
 	flex: 1 1 calc(33.33% - 10px);
 	min-width: 200px;
 	box-sizing: border-box;
+}
+
+.skip-image {
+	max-width: 250px;
 }

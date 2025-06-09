@@ -1,6 +1,8 @@
 import React from "react";
 import "./skip-list.css";
 
+import skipImageUrl from "./assets/images/skip.jpg";
+
 const SkipList = ({ skips }) => {
 	const calculateTotalPrice = (priceBeforeVat, vatPercent) => {
 		return priceBeforeVat * (1 + vatPercent / 100);
@@ -13,6 +15,7 @@ const SkipList = ({ skips }) => {
 			<ul className="skip-list">
 				{skips.map((skip) => (
 					<li key={skip.id} className="skip-item">
+						<img class="skip-image" src={skipImageUrl} />
 						<div>
 							<strong>Size:</strong> {skip.size} yards
 						</div>
