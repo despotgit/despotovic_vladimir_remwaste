@@ -1,5 +1,6 @@
 import React from "react";
 import "./skip-list.css";
+import { useState } from "react";
 
 import skipImageUrl from "../../assets/images/skip.jpg";
 
@@ -15,7 +16,7 @@ const SkipList = ({ skips }) => {
 			<ul className="skip-list">
 				{skips.map((skip) => (
 					<li key={skip.id} className="skip-item">
-						<img class="skip-image" src={skipImageUrl} />
+						<img className="skip-image" src={skipImageUrl} />
 						<div>
 							<strong>Size:</strong> {skip.size} yards
 						</div>
