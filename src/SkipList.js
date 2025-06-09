@@ -1,5 +1,5 @@
 import React from "react";
-import "./SkipList.css"; // Optional for styling
+import "./SkipList.css";
 
 const SkipList = ({ skips }) => {
 	const calculateTotalPrice = (priceBeforeVat, vatPercent) => {
@@ -14,7 +14,7 @@ const SkipList = ({ skips }) => {
 				{skips.map((skip) => (
 					<li key={skip.id} className="skip-item">
 						<div>
-							<strong>Size:</strong> {skip.size} yd³
+							<strong>Size:</strong> {skip.size} yards
 						</div>
 						<div>
 							<strong>Hire Period:</strong> {skip.hire_period_days} days
