@@ -8,5 +8,5 @@ export const fetchSkips = async () => {
 	}
 
 	const data = await response.json();
-	return data; // ✅ RETURN data, don't set state here
+	return data;
 };

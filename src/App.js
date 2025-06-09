@@ -12,11 +12,11 @@ function App() {
 		const loadSkips = async () => {
 			try {
 				const data = await fetchSkips();
-				setSkipsData(data); // ✅ OK here
+				setSkipsData(data);
 			} catch (err) {
-				setError(err.message); // ✅ OK here
+				setError(err.message);
 			} finally {
-				setLoading(false); // ✅ OK here
+				setLoading(false);
 			}
 		};
 
