@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SkipList from "./SkipList.js";
+import { fetchSkips } from "./api";
 import "./App.css";
 
 function App() {
@@ -8,7 +9,18 @@ function App() {
 	const [error, setError] = useState(null);
 
 	useEffect(() => {
-		fetchSkips();
+		const loadSkips = async () => {
+			try {
+				const data = await fetchSkips();
+				setSkipsData(data); // ✅ OK here
+			} catch (err) {
+				setError(err.message); // ✅ OK here
+			} finally {
+				setLoading(false); // ✅ OK here
+			}
+		};
+
+		loadSkips();
 	}, []);
 
 	return (

@@ -14,7 +14,7 @@ const SkipList = ({ skips }) => {
 				{skips.map((skip) => (
 					<li key={skip.id} className="skip-item">
 						<div>
-							<strong>Size:</strong> {skip.size} yards
+							<strong>Size:</strong> {skip.size} yd³
 						</div>
 						<div>
 							<strong>Hire Period:</strong> {skip.hire_period_days} days
